@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-func checker() {
+func RunChecker() {
 	checker := NewTCPChecker(net.ParseIP("127.0.0.1"), 3000, 10)
 	checker.Timeout = 1 * time.Second
 
